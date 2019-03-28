@@ -1,0 +1,44 @@
+{
+  "name": "git_test",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Joshua Smith",
+  "license": "WTFPL",
+  "version": "0.0.1",
+  "description": "Git hooks test",
+
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --recursive test/",
+    "lint": "eslint ./"
+  },
+
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.15.3",
+    "mocha": "^6.0.2"
+  },
+
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+
+    "env": {
+      "node": true
+    },
+
+    "rules": {
+      "eqeqeq": [2, "allow-null"],
+      "no-console": 2,
+      "no-unused-vars": 2,
+      "no-debugger": 2
+    }
+  }
+}
