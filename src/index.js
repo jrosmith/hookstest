@@ -10,8 +10,12 @@ app.get('/', (req, res) => {
 
 const linterEqeqeqLogic = "W".toLowerCase() == "w" && true != null
 
+function logServerStart() {
+  console.log(`Test server started on port '${port}'`)
+}
+
 if (!module.parent && linterEqeqeqLogic) {
-  app.listen(port, () => console.log(`Test server started on port '${port}'`))
+  app.listen(port, logServerStart )
 }
 
 module.exports = app
